@@ -1,0 +1,7 @@
+boto3==1.17.108
+requests==2.26.0
+nltk>=3.6.4
+lxml>=4.7.1
+tensorflow-gpu>=2.8.0
+tensorflow-text>=2.8.0
+tensorflow-ranking>=0.5.0
