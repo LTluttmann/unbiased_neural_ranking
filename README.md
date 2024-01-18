@@ -1,4 +1,6 @@
-Unbiased Neural Ranking
+# Unbiased Neural Ranking
+
+This repository contains the code and pdf file of my master thesis titled "Unbiased Neural Ranking Models for Product Search". Since this is company work, I cannot upload the data used to train and validate the models.
 
 The main part of this repo is the mt.models module. It comprises three submodules, lse, ltr and ultr.
 
@@ -12,6 +14,4 @@ This sub-module contains the relevance scoring functions. Besides a simple MLP a
 This sub-module contains learning strategies to isolate position bias present in clickthrough data. Besides the IPW framework of Joachims et al. (2017), for which propensity scores can be obtained by the EM algorithm implemented in this submodule, it contains the JoE architecture and a naive estimator, which simply uses the raw feedback signals from the training data.
 
 Moreover, the module mt.data contains the scripts used for preprocessing and generating the dataset, except for the SQL used to get the clickstream data, as well as helper function to build the tensorflow datasets, which are used to train and evaluate the models. And the mt.evaluation model contains the scripts for a simulation study, that can be used to evaluate the effectiveness of the Unbiased LTR methods. 
-
-In the notebooks folder, jupyter notebook scripts that were train and validate the models in this repo can be found. 
 
